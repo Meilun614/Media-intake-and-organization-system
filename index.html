@@ -18,9 +18,9 @@
   </head>
   <body>
     <!--
-      不要直接用 file:// 打开本文件：浏览器无法编译 TypeScript/JSX。
-      开发：在项目根目录运行 npm run dev，用终端里给出的 http://localhost:5173 访问。
-      静态预览：运行 npm run build 后，用浏览器打开 dist/index.html（已配置相对路径资源）。
+      根目录 index.html 仅供 Vite 开发（npm run dev）使用，不能直接双击打开。
+      离线整站：在项目根目录运行 npm run build:local，然后双击生成的 offline.html 或 dist/index.html。
+      开发服务器：npm run dev → 浏览器打开终端中的 http://localhost:5173
     -->
     <div
       id="boot-hint"
@@ -38,17 +38,23 @@
     >
       <p style="margin: 0 0 0.75rem; font-weight: 600">页面空白？</p>
       <p style="margin: 0 0 0.75rem">
-        本站点是 <strong>Vite + React</strong> 项目，<strong>不能</strong>像普通静态页一样双击根目录的
-        <code>index.html</code> 打开。
+        本站点是 <strong>Vite + React</strong> 项目：根目录的 <code>index.html</code> 只用于开发打包入口，
+        <strong>不能直接双击</strong>打开完整网站。
       </p>
-      <p style="margin: 0 0 0.5rem">请在本文件夹终端执行：</p>
+      <p style="margin: 0 0 0.5rem"><strong>离线双击打开（无需 localhost）：</strong></p>
       <pre
         style="margin: 0 0 1rem; padding: 0.75rem 1rem; background: #0f172a; color: #e2e8f0; border-radius: 8px; overflow: auto; font-size: 0.875rem"
       ><code>npm install
-npm run dev</code></pre>
-      <p style="margin: 0 0 0.75rem">然后在浏览器打开终端显示的地址（一般为 <code>http://localhost:5173</code>）。</p>
+npm run build:local</code></pre>
+      <p style="margin: 0 0 0.75rem">
+        然后在资源管理器中双击项目根目录下的 <code>offline.html</code>（或 <code>dist/index.html</code>）。
+      </p>
+      <p style="margin: 0 0 0.5rem"><strong>日常开发：</strong></p>
+      <pre
+        style="margin: 0 0 1rem; padding: 0.75rem 1rem; background: #0f172a; color: #e2e8f0; border-radius: 8px; overflow: auto; font-size: 0.875rem"
+      ><code>npm run dev</code></pre>
       <p style="margin: 0; font-size: 0.9rem; color: #64748b">
-        若需离线双击预览：先执行 <code>npm run build</code>，再打开 <code>dist/index.html</code>。
+        GitHub Pages 部署仍使用 <code>npm run build</code>（CI 自动执行）；<code>build:local</code> 专用于生成可 file:// 打开的单文件包。
       </p>
     </div>
     <div id="root"></div>
