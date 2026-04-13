@@ -1,0 +1,582 @@
+/* Embedded ops console — harmonizes with site tokens; .opsLight echoes NiceGUI light cards */
+
+.section {
+  padding: 4.5rem 1.5rem 5rem;
+  background: linear-gradient(180deg, var(--color-bg-deep) 0%, #0a0f1a 50%, var(--color-bg-elevated) 100%);
+}
+
+.inner {
+  max-width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.intro {
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  background: rgba(45, 212, 191, 0.08);
+  border: 1px solid rgba(45, 212, 191, 0.22);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.intro strong {
+  color: var(--color-text);
+}
+
+.intro code {
+  font-size: 0.82em;
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.shell {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+  background: rgba(12, 18, 34, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.shell.opsLight {
+  background: #f8fafc;
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.shell.opsLight .tabBar {
+  background: #fff;
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+.shell.opsLight .tab {
+  color: #64748b;
+}
+
+.shell.opsLight .tab:hover {
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.shell.opsLight .tabActive {
+  color: #0f766e;
+  background: rgba(45, 212, 191, 0.12);
+}
+
+.shell.opsLight .panel {
+  color: #1e293b;
+}
+
+.topBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.shell.opsLight .topBar {
+  background: #f1f5f9;
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+.topBar label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.shell.opsLight .topBar label {
+  color: #64748b;
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.tab:hover {
+  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tabActive {
+  color: var(--accent);
+  background: rgba(45, 212, 191, 0.12);
+}
+
+.panel {
+  padding: 1.5rem 1.25rem 2rem;
+  min-height: 420px;
+  color: var(--color-text);
+}
+
+.shell.opsLight .panel {
+  background: #fff;
+}
+
+.panel h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.muted {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem;
+  line-height: 1.55;
+}
+
+.shell.opsLight .muted {
+  color: #64748b;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.input,
+.select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--color-text);
+  min-width: 12rem;
+}
+
+.shell.opsLight .input,
+.shell.opsLight .select {
+  background: #fff;
+  border-color: rgba(15, 23, 42, 0.15);
+  color: #0f172a;
+}
+
+.switchRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.btn {
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-strong);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    transform 0.2s var(--ease-out),
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btnPrimary {
+  border: none;
+  background: linear-gradient(135deg, var(--accent) 0%, #5eead4 100%);
+  color: var(--color-bg-deep);
+}
+
+.shell.opsLight .btn {
+  background: #fff;
+  border-color: rgba(15, 23, 42, 0.15);
+  color: #0f172a;
+}
+
+.shell.opsLight .btnPrimary {
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+  color: #fff;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.metricCard {
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  transition: transform 0.25s var(--ease-out);
+}
+
+.metricCard:hover {
+  transform: translateY(-2px);
+}
+
+.shell.opsLight .metricCard {
+  background: #f8fafc;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+.metricLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.shell.opsLight .metricLabel {
+  color: #64748b;
+}
+
+.metricValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-feature-settings: "tnum" 1;
+  color: var(--color-text);
+}
+
+.shell.opsLight .metricValue {
+  color: #0f172a;
+}
+
+.stagePill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.emptyCard {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--color-border-strong);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.shell.opsLight .emptyCard {
+  background: #f8fafc;
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.tableWrap {
+  overflow: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  margin-top: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.table th,
+.table td {
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.shell.opsLight .table th {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(45, 212, 191, 0.06);
+}
+
+.shell.opsLight .table tbody tr:hover {
+  background: rgba(13, 148, 136, 0.08);
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pillWarn {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+.shell.opsLight .pillWarn {
+  color: #b45309;
+}
+
+.pillOk {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+}
+
+.shell.opsLight .pillOk {
+  color: #047857;
+}
+
+.pillMuted {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(7, 10, 18, 0.72);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  width: min(920px, 100%);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+  max-height: min(92vh, 900px);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.35s var(--ease-out);
+}
+
+.shell.opsLight .modal {
+  background: #fff;
+  color: #0f172a;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHead {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modalBody {
+  padding: 1.25rem 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.formGrid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.shell.opsLight .formGrid label {
+  color: #64748b;
+}
+
+.fileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fileList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.85rem;
+}
+
+.aiCard {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+}
+
+.shell.opsLight .aiCard {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightboxInner {
+  max-width: min(960px, 100%);
+  width: 100%;
+  background: #0f172a;
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  border: 1px solid var(--color-border-strong);
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: min(70vh, 640px);
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: #000;
+}
+
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.statTile {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.shell.opsLight .statTile {
+  background: #f8fafc;
+}
+
+.statTile span {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.statTile strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.summaryHint {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+@keyframes demoPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.busyBar {
+  animation: demoPulse 1.2s ease infinite;
+}
