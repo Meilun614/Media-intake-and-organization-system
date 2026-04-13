@@ -1,0 +1,59 @@
+# Deploy Vite/React site to GitHub Pages (public URL, no localhost).
+#
+# After you push this file to GitHub:
+# 1. Repo → Settings → Pages → Build and deployment → Source: "GitHub Actions"
+# 2. Push to branch "main" (or edit `on.push.branches` below)
+# 3. Open: https://<your-username>.github.io/<repository-name>/
+#
+# If your repo is "<username>.github.io" (site at https://<username>.github.io/),
+# replace the Build env below with: VITE_BASE: /
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        env:
+          # Project site URL: https://<user>.github.io/<this-repo-name>/
+          VITE_BASE: /${{ github.event.repository.name }}/
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
