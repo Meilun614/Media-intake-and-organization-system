@@ -9,8 +9,8 @@
  * SKILLS:           Update `skillsShowcase` and each member's `contributions`.
  * CONTACT:          Update `contactSection` for a shared inbox or faculty sponsor line.
  *
- * Photo tips: Add JPG/PNG/WebP under public/team/ (e.g. public/team/jane-doe.jpg)
- *             then set photoSrc: "/team/jane-doe.jpg"
+ * Photo tips: Add JPG/PNG/WebP under public/team/ (e.g. public/team/jane-doe.png)
+ *             then set photoSrc: "/team/jane-doe.png"
  * =============================================================================
  */
 
@@ -117,7 +117,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "ihiggin3@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/isaiah-higgins-9600a5241/",
-    photoSrc: "/team/placeholder-3.svg",
+    photoSrc: "/team/isaiah_higgins.png",
     contributions: ["As-is / to-be workflows", "Legacy intake mapping", "Handoff clarity for builders"],
   },
   {
@@ -147,7 +147,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "nbranha1@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/nevaeh-branham900864301/",
-    photoSrc: "/team/placeholder-5.svg",
+    photoSrc: "/team/neveah_branham.png",
     contributions: ["Test planning", "Knowledge base & runbooks", "Quality checkpoints"],
   },
 ];
