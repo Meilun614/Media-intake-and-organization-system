@@ -10,7 +10,7 @@
  * CONTACT:          Update `contactSection` for a shared inbox or faculty sponsor line.
  *
  * Photo tips: Add JPG/PNG/WebP under public/team/ (e.g. public/team/jane-doe.png)
- *             then set photoSrc: "/team/jane-doe.png"
+ *             then set photoSrc: "team/jane-doe.png"
  * =============================================================================
  */
 
@@ -87,7 +87,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "ckangni@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/claude-kangni/",
-    photoSrc: "/team/claude-kangni.png",
+    photoSrc: "team/claude-kangni.png",
     contributions: ["Requirements elicitation", "Process & gap analysis", "Documentation for traceability"],
   },
   {
@@ -102,7 +102,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "fahmed19@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/fatima-ahmed-a057b33a9/",
-    photoSrc: "/team/fatima-ahmed.png",
+    photoSrc: "team/fatima-ahmed.png",
     contributions: ["SharePoint configuration", "Site & library architecture", "Governance alignment"],
   },
   {
@@ -117,7 +117,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "ihiggin3@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/isaiah-higgins-9600a5241/",
-    photoSrc: "/team/isaiah_higgins.png",
+    photoSrc: "team/isaiah_higgins.png",
     contributions: ["As-is / to-be workflows", "Legacy intake mapping", "Handoff clarity for builders"],
   },
   {
@@ -132,7 +132,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "mwu7@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/meilun-wu-366585316/",
-    photoSrc: "/team/meilun-wu.png",
+    photoSrc: "team/meilun-wu.png",
     contributions: ["Team leadership", "UI implementation", "Design–dev alignment"],
   },
   {
@@ -147,7 +147,7 @@ export const teamMembers: TeamMember[] = [
     contactLabel: "KSU email",
     contactEmail: "nbranha1@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/nevaeh-branham900864301/",
-    photoSrc: "/team/neveah_branham.png",
+    photoSrc: "team/neveah_branham.png",
     contributions: ["Test planning", "Knowledge base & runbooks", "Quality checkpoints"],
   },
 ];
