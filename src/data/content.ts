@@ -91,7 +91,7 @@ export const teamMembers: TeamMember[] = [
     ],
     contactLabel: "KSU email",
     contactEmail: "mwu7@students.kennesaw.edu",
-    linkedInUrl: "https://www.linkedin.com/in/meilun-wu-366585316/",
+    linkedInUrl: "https://www.linkedin.com/in/meilun-wu",
     photoSrc: "team/meilun-wu.png",
     contributions: [
       "Led the design and implementation of a full-stack media intake system, owning UI architecture, workflow design, and end-to-end user experience.",
@@ -152,12 +152,16 @@ export const teamMembers: TeamMember[] = [
     role: "Documentation & Quality Lead",
     graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
-      "Seeking internships in QA, technical writing, or delivery roles where documentation and quality gates keep releases predictable.",
-    dreamJob: "QA engineer or technical writer embedded with engineering to keep standards high and users supported.",
-    otherProjects: [],
+      "My goal is to gain hands-on experience applying my technical skills in a real-world setting. I am particularly interested in strengthening my ability to work with data, understand how it informs decision-making, and contribute to projects that have practical impact. I also want to continue developing professionally by improving my collaboration, communication, and problem-solving skills.",
+    dreamJob:
+      "My ideal role is one where I can work at the intersection of data, AI, and IT to support decision-making. I’m interested in using data analysis and machine learning to help organizations make informed, effective choices. With my background in IT, I want to be in a role where I can both understand technical systems and translate data into insights that are useful and actionable.",
+    otherProjects: [
+      "I am part of an AI and animal advocacy fellowship, exploring applications of AI in areas such as exotic animal ownership and conservation, with a focus on real world impact and ethical considerations.",
+      "In addition, I have completed multiple machine learning projects involving model development, data preprocessing, and evaluation, while building a strong foundation in IT and problem solving.",
+    ],
     contactLabel: "KSU email",
     contactEmail: "nbranha1@students.kennesaw.edu",
-    linkedInUrl: "https://www.linkedin.com/in/nevaeh-branham900864301/",
+    linkedInUrl: "https://www.linkedin.com/in/nevaeh-branham-900864301",
     photoSrc: "team/neveah_branham.png",
     contributions: [
       "Test planning, quality assurance processes, and development of knowledge base and operational documentation.",
