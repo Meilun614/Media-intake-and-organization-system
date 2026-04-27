@@ -39,15 +39,15 @@ export function Hero() {
             <div className={styles.flow}>
               <div className={styles.flowRow}>
                 <span className={styles.badge}>In</span>
-                <span className={styles.flowText}>Guided uploads with consistent metadata</span>
+                <span className={styles.flowText}>Structured ingestion with consistent, reliable metadata</span>
               </div>
               <div className={styles.flowRow}>
                 <span className={`${styles.badge} ${styles.badgePurple}`}>Core</span>
-                <span className={styles.flowText}>Searchable library with role-aware access</span>
+                <span className={styles.flowText}>Searchable media library with intuitive access and filtering</span>
               </div>
               <div className={styles.flowRow}>
                 <span className={styles.badge}>Out</span>
-                <span className={styles.flowText}>Campaign-ready assets without duplicate work</span>
+                <span className={styles.flowText}>Ready-to-use assets without redundant sorting or manual effort</span>
               </div>
             </div>
             <p className={styles.meta}>{project.purposeStatement}</p>

@@ -32,8 +32,8 @@ export function PipelineSection() {
         </div>
         <Reveal>
           <p className={styles.hint}>
-            For code-level detail, start at <code>run.py</code> → <code>app/ui/main.py</code> routes, then{" "}
-            <code>app/core/engine.py</code> for batching and audit schemas.
+            For implementation details, refer to the GitHub repository, which includes the full pipeline logic, UI
+            components, and export workflows.
           </p>
         </Reveal>
       </div>

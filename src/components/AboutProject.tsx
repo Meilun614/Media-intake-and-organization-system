@@ -11,8 +11,7 @@ export function AboutProject() {
           <SectionHeading
             id="about-heading"
             eyebrow="About the project"
-            title="From scattered files to a dependable media library"
-            subtitle="UPDATE: When your capstone scope is finalized, refine these three cards with concrete deliverables, tech stack choices, and sponsor context."
+            title="From scattered media to a structured, reliable library"
           />
         </Reveal>
 
@@ -68,9 +67,9 @@ export function AboutProject() {
                   GitHub repository
                 </h3>
                 <p className={styles.repoDesc}>
-                  Source code and documentation for the NiceGUI / Python media intake and organization application
-                  live in this repository—it matches the workflow you can try in the{" "}
-                  <strong>Live demo</strong> section of this site.
+                  The full source code and documentation for the NiceGUI and Python-based media intake system are
+                  available in this repository. It reflects the same workflow demonstrated in the{" "}
+                  <strong>Live Demo</strong> section of this site.
                 </p>
                 <div className={styles.repoActions}>
                   <a

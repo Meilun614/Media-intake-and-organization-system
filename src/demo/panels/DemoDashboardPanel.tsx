@@ -30,12 +30,12 @@ export function DemoDashboardPanel() {
       <div className={styles.panel}>
         <h3>Dashboard</h3>
         <p className={styles.muted}>
-          Live status and metrics for the current intake session — same concept as the NiceGUI home route (
-          <code style={{ fontSize: "0.85em" }}>app/ui/pages/dashboard.py</code>).
+          Live status and metrics for the current intake session, reflecting the same workflow as the desktop
+          application.
         </p>
         <div className={styles.emptyCard}>
           <p className={styles.muted} style={{ marginBottom: "1.25rem" }}>
-            No intake loaded yet. Start a new intake (simulated scan) or load the presentation demo dataset.
+            No intake loaded yet. Start a simulated scan or load the sample dataset to begin exploring the workflow.
           </p>
           <div className={styles.row} style={{ justifyContent: "center" }}>
             <button type="button" className={`${styles.btn} ${styles.btnPrimary}`} onClick={() => dispatch({ type: "SET_TAB", tab: "intake" })}>

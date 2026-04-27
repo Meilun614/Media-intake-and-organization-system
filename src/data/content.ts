@@ -24,7 +24,7 @@ export const siteMeta = {
 export const project = {
   title: "Media Intake & Organization System",
   subtitle:
-    "A capstone initiative to design reliable workflows for ingesting, tagging, and surfacing digital media—so outreach teams spend less time searching and more time creating impact.",
+    "A metadata-driven system for ingesting, organizing, and retrieving digital media—so outreach teams spend less time searching and more time delivering impact.",
 
   /** UPDATE: Replace with your finalized elevator pitch (2–4 sentences). */
   purposeStatement:
@@ -32,15 +32,15 @@ export const project = {
 
   /** UPDATE: Describe the problem space for sponsors and recruiters. */
   problem:
-    "Organizations collect large volumes of photos, video, and campaign assets across channels and devices. Without consistent intake rules, metadata, and search, valuable content is duplicated, lost, or impossible to reuse under deadlines.",
+    "Organizations accumulate large volumes of photos, videos, and campaign assets across multiple channels and devices. Without consistent intake processes, structured metadata, and reliable search, valuable content becomes duplicated, difficult to locate, or effectively unusable under time pressure.",
 
   /** UPDATE: What you are delivering (prototype, API, dashboard, policy kit, etc.). */
   approach:
-    "Our team is combining user research, a structured data model, and an approachable interface so contributors can upload confidently and stakeholders can find assets quickly—even as the library grows.",
+    "We combine structured metadata design, automated intake workflows, and a user-friendly interface to simplify how media is organized and accessed. Contributors can upload with confidence, while teams can quickly find and reuse assets as the library grows.",
 
   /** UPDATE: Why this matters beyond the classroom (impact, efficiency, accessibility). */
   whyItMatters:
-    "Strong media operations underpin outreach, fundraising, and brand trust. By treating intake and organization as a first-class product problem, we aim to save hours each week for communications teams and improve consistency across campaigns.",
+    "Effective media management directly supports outreach, reporting, and long-term knowledge retention. By treating intake and organization as a core system rather than an afterthought, we reduce manual effort, improve consistency, and enable faster, more reliable access to critical assets.",
 
   /** Public GitHub repository (NiceGUI / Python application) */
   githubRepoUrl:
@@ -76,127 +76,151 @@ export type TeamMember = {
 
 export const teamMembers: TeamMember[] = [
   {
+    id: "meilun-wu",
+    name: "Meilun Wu",
+    role: "Team Lead and UI Engineer",
+    graduation: "Expected Graduation: December 2026 · GPA: 3.96",
+    internshipStatement:
+      "Seeking internships across software engineering, UI development, and broader IT roles, where I can contribute to building user-centered systems, develop scalable solutions, and collaborate across teams.",
+    dreamJob:
+      "UI engineer or product-focused software engineer, with a path toward technical leadership in building scalable, user-driven systems.",
+    otherProjects: [
+      "LoRaWAN-based sensing system for real-time environmental data collection and transmission",
+      "Machine learning system for Parkinson’s disease diagnosis using signal and pattern analysis",
+      "Vision Transformer (ViT)-based image matching system for feature alignment and comparison",
+    ],
+    contactLabel: "KSU email",
+    contactEmail: "mwu7@students.kennesaw.edu",
+    linkedInUrl: "https://www.linkedin.com/in/meilun-wu-366585316/",
+    photoSrc: "team/meilun-wu.png",
+    contributions: [
+      "Led the design and implementation of a full-stack media intake system, owning UI architecture, workflow design, and end-to-end user experience.",
+    ],
+  },
+  {
     id: "claude-kangni",
     name: "Claude Kangni",
     role: "Requirements Engineer / Analyst",
-    graduation: "UPDATE: add graduation term",
+    graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
       "Open to internships where I can translate stakeholder needs into clear requirements, traceability, and actionable specs for delivery teams.",
     dreamJob: "Business analyst or requirements engineer on cross-functional product initiatives.",
-    otherProjects: ["UPDATE: add prior coursework, work, or side projects"],
+    otherProjects: [],
     contactLabel: "KSU email",
     contactEmail: "ckangni@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/claude-kangni/",
     photoSrc: "team/claude-kangni.png",
-    contributions: ["Requirements elicitation", "Process & gap analysis", "Documentation for traceability"],
+    contributions: [
+      "Requirements elicitation, process and gap analysis, and documentation for traceability and system alignment.",
+    ],
   },
   {
     id: "fatima-ahmed",
     name: "Fatima Ahmed",
     role: "SharePoint Configuration & Architecture Lead",
-    graduation: "UPDATE: add graduation term",
+    graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
       "Seeking internships focused on Microsoft 365 / SharePoint solutions, information architecture, and scalable collaboration platforms.",
     dreamJob: "SharePoint or M365 solutions architect helping organizations structure content and permissions with confidence.",
-    otherProjects: ["UPDATE: add prior coursework, work, or side projects"],
+    otherProjects: [],
     contactLabel: "KSU email",
     contactEmail: "fahmed19@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/fatima-ahmed-a057b33a9/",
     photoSrc: "team/fatima-ahmed.png",
-    contributions: ["SharePoint configuration", "Site & library architecture", "Governance alignment"],
+    contributions: ["SharePoint configuration, site and library architecture design, and governance alignment."],
   },
   {
     id: "isaiah-higgins",
     name: "Isaiah Higgins",
     role: "Legacy Media Intake Workflow Designer",
-    graduation: "UPDATE: add graduation term",
+    graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
       "Interested in internships involving workflow redesign, operations, and bridging legacy processes with modern intake practices.",
     dreamJob: "Process or workflow designer / analyst improving how teams move work from intake through delivery.",
-    otherProjects: ["UPDATE: add prior coursework, work, or side projects"],
+    otherProjects: [],
     contactLabel: "KSU email",
     contactEmail: "ihiggin3@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/isaiah-higgins-9600a5241/",
     photoSrc: "team/isaiah_higgins.png",
-    contributions: ["As-is / to-be workflows", "Legacy intake mapping", "Handoff clarity for builders"],
-  },
-  {
-    id: "meilun-wu",
-    name: "Meilun Wu",
-    role: "Team Lead and UI Developer",
-    graduation: "UPDATE: add graduation term",
-    internshipStatement:
-      "Looking for internships that blend front-end development with collaboration—shipping polished UI while coordinating milestones and demos.",
-    dreamJob: "UI engineer or tech lead track with strong product sense and team communication.",
-    otherProjects: ["UPDATE: add prior coursework, work, or side projects"],
-    contactLabel: "KSU email",
-    contactEmail: "mwu7@students.kennesaw.edu",
-    linkedInUrl: "https://www.linkedin.com/in/meilun-wu-366585316/",
-    photoSrc: "team/meilun-wu.png",
-    contributions: ["Team leadership", "UI implementation", "Design–dev alignment"],
+    contributions: [
+      "Current-state and future-state workflow design, legacy media intake mapping, and implementation handoff support.",
+    ],
   },
   {
     id: "nevaeh-branham",
     name: "Nevaeh Branham",
     role: "Documentation & Quality Lead",
-    graduation: "UPDATE: add graduation term",
+    graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
       "Seeking internships in QA, technical writing, or delivery roles where documentation and quality gates keep releases predictable.",
     dreamJob: "QA engineer or technical writer embedded with engineering to keep standards high and users supported.",
-    otherProjects: ["UPDATE: add prior coursework, work, or side projects"],
+    otherProjects: [],
     contactLabel: "KSU email",
     contactEmail: "nbranha1@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/nevaeh-branham900864301/",
     photoSrc: "team/neveah_branham.png",
-    contributions: ["Test planning", "Knowledge base & runbooks", "Quality checkpoints"],
+    contributions: [
+      "Test planning, quality assurance processes, and development of knowledge base and operational documentation.",
+    ],
   },
 ];
 
 export const skillsShowcase = {
   intro:
-    "We combine research, engineering, and delivery discipline so the project stays legible to sponsors—and interview-ready for each of us.",
+    "Our team combines research, engineering, and delivery practices to build a system that is both understandable to stakeholders and strong enough to showcase in real-world technical interviews.",
   pillars: [
     {
       title: "Research & UX",
-      items: ["Journey mapping", "Usability testing", "Information architecture"],
+      items: [
+        "User journey mapping and workflow analysis",
+        "Usability testing and iteration",
+        "Information architecture and metadata design",
+      ],
     },
     {
       title: "Engineering",
-      items: ["TypeScript / React", "REST & API design", "Automated testing"],
+      items: [
+        "Frontend development with React and TypeScript",
+        "API design and system integration",
+        "Structured data processing and automation",
+      ],
     },
     {
       title: "Operations",
-      items: ["Agile ceremonies", "Documentation", "Stakeholder demos"],
+      items: [
+        "Agile collaboration and sprint coordination",
+        "Technical documentation and knowledge sharing",
+        "Stakeholder demos and feedback integration",
+      ],
     },
   ],
 };
 
-/** End-to-end flow — aligns with app/core/engine.py + intake_service.py documentation */
 export const systemPipeline = {
   eyebrow: "System pipeline",
-  title: "From folder scan to audit export",
+  title: "From raw media to structured, audit-ready output",
   intro:
-    "The production application implements a deterministic pipeline: scan supported media under a chosen directory, resolve capture timestamps (EXIF, video tags, or filesystem fallback), group files into time-based batches, capture structured questionnaire metadata per batch, support optional local CLIP tagging, and export audit-ready CSV/XLSX for downstream systems.",
+    "The system follows a structured, end-to-end pipeline that transforms raw media into organized, searchable, and audit-ready data. It scans files from a selected directory, extracts capture timestamps (EXIF, video metadata, or filesystem fallback), groups content into time-based batches, captures structured metadata through guided input, supports optional local AI tagging, and produces export-ready CSV or XLSX outputs for downstream systems.",
   steps: [
     {
       title: "Scan & preprocess",
-      body: "Enumerate images and videos, validate integrity, and resolve timestamps — see scan_media_files / preprocess in app/core/engine.py.",
+      body: "Scan and validate images and videos, then extract or infer capture timestamps to establish a reliable temporal foundation for processing.",
     },
     {
       title: "Time-based batching",
-      body: "Group consecutive captures when gaps exceed the operator-configured threshold (batch gap in minutes), producing BatchRecord groups.",
+      body: "Automatically group media into batches based on configurable time gaps, allowing related files from the same event to be processed together.",
     },
     {
       title: "Questionnaire & AI assist",
-      body: "Operators complete required fields (event, unit, usage, sensitivity). Optional local OpenCLIP suggestions map into the same form vocabulary (app/core/tag_service.py, batch_questionnaire.py).",
+      body: "Capture structured metadata at the batch level, including event, unit, usage, and sensitivity. Optional local AI suggestions assist tagging while keeping users in control.",
     },
     {
       title: "Batch review & file flags",
-      body: "Review queue with filters; per-batch drawer for thumbnails, lightbox previews, clearing needs_review flags, and applying AI suggestions (app/ui/pages/batch_review.py).",
+      body: "Review grouped media with visual previews and filtering tools, resolve items that require attention, and refine metadata before finalizing batches.",
     },
     {
       title: "Export & handoff",
-      body: "Audit report rows per file with batch context and questionnaire columns; optional push to SharePoint mock for demos (app/ui/pages/export_page.py).",
+      body: "Generate structured audit reports with per-file and batch-level metadata, and optionally simulate downstream integration such as SharePoint uploads.",
     },
   ],
 };
@@ -204,27 +228,27 @@ export const systemPipeline = {
 /** Stack summary for sponsors and technical readers */
 export const technologyOverview = {
   eyebrow: "Technology overview",
-  title: "What powers the real system — and this website demo",
+  title: "Technology behind the system and demo experience",
   intro:
-    "The capstone deliverable is a Python NiceGUI operations console with a packaged desktop build. This public site adds a React layer for storytelling; the Interactive Demo section simulates the same session model and demo_dataset batches in the browser.",
+    "The core system is built as a Python-based desktop application using NiceGUI, designed to handle media intake, processing, and export workflows. This website complements the application with a lightweight React layer that presents the system through an interactive, browser-based demo, simulating real user workflows and dataset processing.",
   columns: [
     {
       title: "Production app",
       items: [
-        "Python 3.x, NiceGUI (Quasar/Vue under the hood)",
-        "pandas / openpyxl audit exports",
-        "Pillow + optional exiftool / ffprobe for metadata",
-        "Optional local OpenCLIP (no cloud inference)",
-        "SharePoint mock routes for safe demonstrations",
+        "Python 3.x with NiceGUI (built on Quasar and Vue)",
+        "Structured data processing and audit export using pandas and openpyxl",
+        "Metadata extraction via Pillow, with optional exiftool and ffprobe support",
+        "Optional local OpenCLIP for privacy-preserving AI tagging (no cloud dependency)",
+        "SharePoint mock integration for safe demonstration workflows",
       ],
     },
     {
       title: "This showcase site",
       items: [
-        "Vite + React + TypeScript",
-        "Reusable section components + CSS modules",
-        "Embedded demo: client-side state mirroring AppState workflows",
-        "Mapped comments to Python modules for maintainability",
+        "Vite, React, and TypeScript for a fast and modular frontend",
+        "Reusable UI components with scoped styling",
+        "Interactive demo that mirrors real application workflows in the browser",
+        "Clear mapping between UI behavior and underlying system logic",
       ],
     },
   ],
@@ -232,12 +256,12 @@ export const technologyOverview = {
 
 export const interactiveDemoIntro = {
   eyebrow: "Interactive demo",
-  title: "Try the system — browser session",
+  title: "Try the system in your browser",
   subtitle:
-    "Walk through dashboard metrics, simulated intake, batch review, questionnaire + local AI suggestions, CSV export, and SharePoint mock upload — aligned with the Team-S26-36-02 NiceGUI application.",
+    "Explore the full workflow, including dashboard metrics, simulated intake, batch review, structured metadata entry, AI-assisted tagging, CSV export, and SharePoint-style upload — all mirroring the core NiceGUI application.",
   noteLead: "Ground truth:",
   noteBody:
-    "This experience is derived from the repository folder Team-S26-36-02-Media-Sharing-Platform-for-Outreach-and-Engagement (NiceGUI routes in app/ui/main.py). File names, batch IDs (B001–B004), questionnaire shapes, and AI payloads follow app/ui/demo_dataset.py. Where the desktop app uses native folder pickers, ffmpeg, or on-disk previews, the web demo substitutes text paths and seeded placeholder imagery — behavior and operator flow stay the same.",
+    "This demo is derived directly from the project repository and reflects the same data structures, batch logic, and workflows used in the desktop application. To support a browser environment, file system operations and media previews are simulated, while the overall behavior and user flow remain consistent.",
 };
 
 /** Shared team contact — currently Team Lead inbox */

@@ -12,7 +12,7 @@ export function SkillsSection() {
             id="skills-heading"
             eyebrow="Skills & contributions"
             align="center"
-            title="How we divide the work—and raise the bar"
+            title="Team collaboration and contributions"
             subtitle={skillsShowcase.intro}
           />
         </Reveal>

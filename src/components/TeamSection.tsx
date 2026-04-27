@@ -14,7 +14,6 @@ export function TeamSection() {
             eyebrow="The team"
             light
             title="People behind the build"
-            subtitle="Recruiter-friendly profiles—swap placeholders in content.ts for real photos, LinkedIn URLs, and emails."
             align="center"
           />
         </Reveal>
