@@ -32,15 +32,15 @@ export const project = {
 
   /** UPDATE: Describe the problem space for sponsors and recruiters. */
   problem:
-    "Organizations accumulate large volumes of photos, videos, and campaign assets across multiple channels and devices. Without consistent intake processes, structured metadata, and reliable search, valuable content becomes duplicated, difficult to locate, or effectively unusable under time pressure.",
+    "Organizations collect photos, videos, and campaign assets across many channels and devices. Without a consistent intake process, content becomes duplicated, hard to find, and difficult to reuse when teams need it most.",
 
   /** UPDATE: What you are delivering (prototype, API, dashboard, policy kit, etc.). */
   approach:
-    "We combine structured metadata design, automated intake workflows, and a user-friendly interface to simplify how media is organized and accessed. Contributors can upload with confidence, while teams can quickly find and reuse assets as the library grows.",
+    "We combine structured metadata, automated intake workflows, and a simple interface for organizing media. Contributors can upload with confidence, and teams can quickly search, review, and reuse assets as the library grows.",
 
   /** UPDATE: Why this matters beyond the classroom (impact, efficiency, accessibility). */
   whyItMatters:
-    "Effective media management directly supports outreach, reporting, and long-term knowledge retention. By treating intake and organization as a core system rather than an afterthought, we reduce manual effort, improve consistency, and enable faster, more reliable access to critical assets.",
+    "Strong media management supports outreach, reporting, and long-term knowledge retention. By making intake a clear process, we reduce manual effort, improve consistency, and help teams access important assets faster.",
 
   /** Public GitHub repository (NiceGUI / Python application) */
   githubRepoUrl:

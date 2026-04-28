@@ -99,12 +99,6 @@ export function AboutProject() {
           </aside>
         </Reveal>
 
-        <Reveal>
-          <p className={styles.note}>
-            <strong>Future updates:</strong> Swap copy in <code>src/data/content.ts</code> under the{" "}
-            <code>project</code> object—keep paragraphs short for skimmability on mobile.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

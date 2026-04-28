@@ -79,21 +79,6 @@
   color: var(--color-text-dark-muted);
 }
 
-.note {
-  margin-top: 2.5rem;
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-md);
-  background: rgba(15, 118, 110, 0.08);
-  border: 1px dashed rgba(15, 118, 110, 0.35);
-  font-size: 0.9rem;
-  color: var(--color-text-dark-muted);
-  line-height: 1.55;
-}
-
-.note strong {
-  color: #0f766e;
-}
-
 .repoCard {
   margin-top: 2rem;
   padding: 1.35rem 1.5rem;

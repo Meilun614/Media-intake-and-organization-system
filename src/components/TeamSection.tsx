@@ -25,14 +25,6 @@ export function TeamSection() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal>
-          <p className={styles.hint}>
-            <strong style={{ color: "var(--color-text)" }}>Tip:</strong> Add headshots under{" "}
-            <code>public/team/</code> and set each member&apos;s <code>photoSrc</code> in{" "}
-            <code>src/data/content.ts</code>. You can also refine graduation dates and project bullets there.
-          </p>
-        </Reveal>
       </div>
     </section>
   );
