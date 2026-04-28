@@ -103,9 +103,15 @@ export const teamMembers: TeamMember[] = [
     role: "Requirements Engineer / Analyst",
     graduation: "Expected Graduation: May 2026 · GPA:",
     internshipStatement:
-      "Open to internships where I can translate stakeholder needs into clear requirements, traceability, and actionable specs for delivery teams.",
-    dreamJob: "Business analyst or requirements engineer on cross-functional product initiatives.",
-    otherProjects: [],
+      "Gain hands-on experience in IT support, cybersecurity, or cloud operations while strengthening technical troubleshooting, scripting, and enterprise systems skills. I’m looking for an internship where I can apply what I’ve learned in the classroom to real-world environments, contribute to meaningful projects, and continue building experience in security, infrastructure, and user support.",
+    dreamJob:
+      "My dream role is to work in cybersecurity, ideally in a Security Operations Center (SOC) or security engineering role where I can help protect systems, investigate threats, and improve security processes. Long term, I’m interested in growing into a cybersecurity analyst or cloud security engineer position focused on threat detection, incident response, and securing enterprise environments.",
+    otherProjects: [
+      "In addition to coursework, I’ve built experience through academic, professional, and personal projects.",
+      "My prior coursework includes networking, systems administration, information security, database management, cloud fundamentals, and scripting.",
+      "Through my IT Service Desk experience, I’ve worked on troubleshooting hardware and software issues, supporting end users, resolving account access issues, and documenting technical solutions in a fast-paced environment.",
+      "I’ve also worked on side projects involving home lab environments, Active Directory, basic vulnerability testing, and security-focused simulations to strengthen my hands-on technical skills.",
+    ],
     contactLabel: "KSU email",
     contactEmail: "ckangni@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/claude-kangni/",
@@ -118,11 +124,16 @@ export const teamMembers: TeamMember[] = [
     id: "fatima-ahmed",
     name: "Fatima Ahmed",
     role: "SharePoint Configuration & Architecture Lead",
-    graduation: "Expected Graduation: May 2026 · GPA:",
+    graduation: "Expected Graduation: May 2026 · GPA: 3.96",
     internshipStatement:
-      "Seeking internships focused on Microsoft 365 / SharePoint solutions, information architecture, and scalable collaboration platforms.",
-    dreamJob: "SharePoint or M365 solutions architect helping organizations structure content and permissions with confidence.",
-    otherProjects: [],
+      "My goal for an internship is to gain hands-on experience applying IT concepts in a real-world environment. I want to build practical skills across areas like system administration, technical support, databases, and general IT operations while becoming more familiar with industry tools and workflows. I am also looking to improve my problem-solving abilities, learn how teams manage and maintain systems, and develop a better understanding of how IT supports business needs.",
+    dreamJob:
+      "My dream role is to work in an IT-related position such as a systems administrator, IT support specialist, or IT analyst, where I can manage systems, troubleshoot issues, and help maintain efficient technology operations. In the long term, I am interested in continuing to grow my technical skills and possibly specializing in areas like systems management, cloud computing, or cybersecurity.",
+    otherProjects: [
+      "I have completed several coursework projects related to system administration, databases, and general IT concepts, where I worked on configuring systems, managing data, and solving technical problems.",
+      "I also developed a project focused on creating an IT solution for a company, which involved analyzing needs and proposing effective technical approaches.",
+      "In addition, I have gained hands-on experience through technical labs involving tools like MongoDB, basic networking, and system setup. Outside of coursework, I have practiced using command-line tools and explored different technologies to continue building my technical skills.",
+    ],
     contactLabel: "KSU email",
     contactEmail: "fahmed19@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/fatima-ahmed-a057b33a9/",
