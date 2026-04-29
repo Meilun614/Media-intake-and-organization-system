@@ -79,7 +79,7 @@ export const teamMembers: TeamMember[] = [
     id: "meilun-wu",
     name: "Meilun Wu",
     role: "Team Lead and UI Engineer",
-    graduation: "Expected Graduation: December 2026 · GPA: 3.96",
+    graduation: "Expected Graduation: December 2026",
     internshipStatement:
       "Seeking internships across software engineering, UI development, and broader IT roles, where I can contribute to building user-centered systems, develop scalable solutions, and collaborate across teams.",
     dreamJob:
@@ -101,16 +101,13 @@ export const teamMembers: TeamMember[] = [
     id: "claude-kangni",
     name: "Claude Kangni",
     role: "Requirements Engineer / Analyst",
-    graduation: "Expected Graduation: May 2026 · GPA:",
+    graduation: "Expected Graduation: May 2026",
     internshipStatement:
-      "Gain hands-on experience in IT support, cybersecurity, or cloud operations while strengthening technical troubleshooting, scripting, and enterprise systems skills. I’m looking for an internship where I can apply what I’ve learned in the classroom to real-world environments, contribute to meaningful projects, and continue building experience in security, infrastructure, and user support.",
+      "Gain hands-on experience in IT support, cybersecurity, or cloud operations while strengthening troubleshooting, scripting, and enterprise systems skills.",
     dreamJob:
-      "My dream role is to work in cybersecurity, ideally in a Security Operations Center (SOC) or security engineering role where I can help protect systems, investigate threats, and improve security processes. Long term, I’m interested in growing into a cybersecurity analyst or cloud security engineer position focused on threat detection, incident response, and securing enterprise environments.",
+      "My goal is to work in cybersecurity, ideally in a SOC or security engineering role focused on threat detection, incident response, and protecting enterprise systems.",
     otherProjects: [
-      "In addition to coursework, I’ve built experience through academic, professional, and personal projects.",
-      "My prior coursework includes networking, systems administration, information security, database management, cloud fundamentals, and scripting.",
-      "Through my IT Service Desk experience, I’ve worked on troubleshooting hardware and software issues, supporting end users, resolving account access issues, and documenting technical solutions in a fast-paced environment.",
-      "I’ve also worked on side projects involving home lab environments, Active Directory, basic vulnerability testing, and security-focused simulations to strengthen my hands-on technical skills.",
+      "I’ve built experience through coursework, IT Service Desk work, and side projects. My background includes networking, systems administration, security, cloud fundamentals, and scripting. I’ve also supported end users, resolved technical issues, and worked on home labs, Active Directory, and security simulations to strengthen my hands-on skills.",
     ],
     contactLabel: "KSU email",
     contactEmail: "ckangni@students.kennesaw.edu",
@@ -124,15 +121,13 @@ export const teamMembers: TeamMember[] = [
     id: "fatima-ahmed",
     name: "Fatima Ahmed",
     role: "SharePoint Configuration & Architecture Lead",
-    graduation: "Expected Graduation: May 2026 · GPA: 3.96",
+    graduation: "Expected Graduation: May 2026",
     internshipStatement:
-      "My goal for an internship is to gain hands-on experience applying IT concepts in a real-world environment. I want to build practical skills across areas like system administration, technical support, databases, and general IT operations while becoming more familiar with industry tools and workflows. I am also looking to improve my problem-solving abilities, learn how teams manage and maintain systems, and develop a better understanding of how IT supports business needs.",
+      "I want to develop hands-on experience applying IT concepts in real-world settings. I aim to build practical skills in system administration, technical support, databases, and IT operations.",
     dreamJob:
-      "My dream role is to work in an IT-related position such as a systems administrator, IT support specialist, or IT analyst, where I can manage systems, troubleshoot issues, and help maintain efficient technology operations. In the long term, I am interested in continuing to grow my technical skills and possibly specializing in areas like systems management, cloud computing, or cybersecurity.",
+      "I want to work in an IT role such as a systems administrator, IT support specialist, or analyst, where I can manage systems, troubleshoot issues, and maintain efficient operations.",
     otherProjects: [
-      "I have completed several coursework projects related to system administration, databases, and general IT concepts, where I worked on configuring systems, managing data, and solving technical problems.",
-      "I also developed a project focused on creating an IT solution for a company, which involved analyzing needs and proposing effective technical approaches.",
-      "In addition, I have gained hands-on experience through technical labs involving tools like MongoDB, basic networking, and system setup. Outside of coursework, I have practiced using command-line tools and explored different technologies to continue building my technical skills.",
+      "I have completed projects in system administration and databases where I configured systems, managed data, and solved technical problems. I also have hands-on experience with working with tools like MongoD and command-line environments.",
     ],
     contactLabel: "KSU email",
     contactEmail: "fahmed19@students.kennesaw.edu",
@@ -144,11 +139,14 @@ export const teamMembers: TeamMember[] = [
     id: "isaiah-higgins",
     name: "Isaiah Higgins",
     role: "Legacy Media Intake Workflow Designer",
-    graduation: "Expected Graduation: May 2026 · GPA:",
+    graduation: "Expected Graduation: May 2026",
     internshipStatement:
-      "Interested in internships involving workflow redesign, operations, and bridging legacy processes with modern intake practices.",
-    dreamJob: "Process or workflow designer / analyst improving how teams move work from intake through delivery.",
-    otherProjects: [],
+      "I’m looking to step into an IT Specialist or IT Support role that builds on my current experience as an IT Apprentice. I’m ready for a full-time position where I can apply what I’ve learned, continue growing technically, and contribute meaningfully to a team.",
+    dreamJob:
+      "My long-term goal is to work in Networking, especially within IT consulting, where each project brings unique challenges and variety.",
+    otherProjects: [
+      "Through previous course projects like Ethical Hacking and Advanced Application Development, I’ve strengthened my decryption skills, deepened my understanding of operating systems, and gained hands-on experience with applications and technical support.",
+    ],
     contactLabel: "KSU email",
     contactEmail: "ihiggin3@students.kennesaw.edu",
     linkedInUrl: "https://www.linkedin.com/in/isaiah-higgins-9600a5241/",
@@ -161,11 +159,11 @@ export const teamMembers: TeamMember[] = [
     id: "nevaeh-branham",
     name: "Nevaeh Branham",
     role: "Documentation & Quality Lead",
-    graduation: "Expected Graduation: May 2026 · GPA:",
+    graduation: "Expected Graduation: May 2026",
     internshipStatement:
-      "My goal is to gain hands-on experience applying my technical skills in a real-world setting. I am particularly interested in strengthening my ability to work with data, understand how it informs decision-making, and contribute to projects that have practical impact. I also want to continue developing professionally by improving my collaboration, communication, and problem-solving skills.",
+      "Gain hands-on experience applying data analysis, machine learning, and IT skills in real-world environments. I aim to strengthen my ability to work with data, understand how it informs decision-making, and improve my collaboration, communication, and problem-solving skills.",
     dreamJob:
-      "My ideal role is one where I can work at the intersection of data, AI, and IT to support decision-making. I’m interested in using data analysis and machine learning to help organizations make informed, effective choices. With my background in IT, I want to be in a role where I can both understand technical systems and translate data into insights that are useful and actionable.",
+      "My goal is to work at the intersection of data, AI, and IT, using data analysis and machine learning to support informed and effective decision-making. I’m especially interested in roles where I can both understand technical systems and translate data into actionable insights.",
     otherProjects: [
       "I am part of an AI and animal advocacy fellowship, exploring applications of AI in areas such as exotic animal ownership and conservation, with a focus on real world impact and ethical considerations.",
       "In addition, I have completed multiple machine learning projects involving model development, data preprocessing, and evaluation, while building a strong foundation in IT and problem solving.",
